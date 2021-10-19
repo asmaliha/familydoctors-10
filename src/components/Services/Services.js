@@ -23,7 +23,7 @@ const Services = () => {
                         <Card.Text>
                             {info.description}
                         </Card.Text>
-                        <Button variant="primary"><Link to="/services" className="text">Go somewhere</Link></Button>
+                        <Button className=" text-white " variant="primary"><Link to="/services" className="text">Our Services</Link></Button>
                     </Card.Body>
                 </Card>)}
         </div>

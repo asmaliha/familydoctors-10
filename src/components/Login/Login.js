@@ -8,6 +8,7 @@ const Login = () => {
         handleEmail,
         handlePassword, user,
         handleUserLogin,
+        error
 
     } = useAuth();
 
@@ -27,6 +28,7 @@ const Login = () => {
                         <input type="password" onBlur={handlePassword} className="form-control" id="inputPassword3" required />
                     </div>
                 </div>
+                <div className="row mb-3 text-danger">{error}</div>
 
                 <button type="submit" className="btn btn-primary" onClick={handleUserLogin}>
                     Submit

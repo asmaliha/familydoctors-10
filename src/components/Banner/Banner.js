@@ -17,8 +17,8 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>Caring like your family</h3>
+                        <p>We offer Services at your doorstep</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={1000}>
@@ -29,8 +29,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Best Consultants</h3>
+                        <p>From reputed hospitals.</p>
                     </Carousel.Caption>
                 </Carousel.Item >
                 <Carousel.Item interval={1000}>
@@ -41,8 +41,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Fully Online</h3>
+                        <p>Services provided ar fully online based</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -53,8 +53,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Online Medicine supply</h3>
+                        <p>Providing prescribed medicines at your doorstep.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

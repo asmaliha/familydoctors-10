@@ -1,10 +1,11 @@
 .section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 30;
-   margin: 10%;
+    grid-gap: 20px;
+padding-left: 12%;
 }
 
 .text {
 text-decoration: none;
 }
+

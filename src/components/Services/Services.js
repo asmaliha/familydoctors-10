@@ -14,7 +14,7 @@ const Services = () => {
     }, [])
     return (
 
-        <div className="section">
+        <div className="section col-lg-4 col-sm-6 col-12">
             {services.map(info =>
                 <Card style={{ width: '18rem' }} className="m-3">
                     <Card.Img variant="top" src={info.image} />

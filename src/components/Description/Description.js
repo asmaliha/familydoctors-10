@@ -11,9 +11,11 @@ const Description = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 className="card-title">Lab Tests and Home Sample Collection</h5>
+                            <p className="card-text">
+
+                                Lab Tests Online is an award-winning health information web resource designed to help patients and caregivers understand the many lab tests that are a vital part of medical care.
+                                According to authorized prescription we provide sample collection from your doorstep also the reports are provided with maximum accuracy with the shortest possible time</p>
                         </div>
                     </div>
                 </div>
@@ -22,9 +24,9 @@ const Description = () => {
                 <div className="row g-0">
                     <div className="col-md-6">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 className="card-title">Consultation with Specialized doctors</h5>
+                            <p className="card-text">"Find most qualified Doctors from Bangladesh to get instant medical advice and second opinion for your health problems. Ask the doctors online and consult them
+                                Book an appointment now and avail the best doctors consultation online.</p>
                         </div>
                     </div>
                     <div className="col-md-6">
@@ -40,9 +42,9 @@ const Description = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 className="card-title">Online Pharmacy</h5>
+                            <p className="card-text">Provide us the prescription we'll get you the medicine!
+                                We offer medicines from trusted pharmaceutical companies and a large range of list there is for you to select. All sort of healthcare products, personal care and medical products ar available to make your life easier.</p>
                         </div>
                     </div>
                 </div>

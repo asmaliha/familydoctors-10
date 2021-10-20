@@ -1,50 +1,71 @@
 import React from 'react';
+import { Form, Row, Button } from 'react-bootstrap';
+import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Register.css'
 
 const Register = () => {
-    const { signInUsingGoogle, toggleLogin,
-        handleEmail,
-        handleName,
-        handlePassword, user,
-        handleRegisterUser,
-        error } = useAuth();
+    const { user, handlePassword, error, handleRegisterUser, handleName } = useAuth();
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = data => console.log(data);
 
     return (
-        <div>
-            <h2>Please Register</h2>
-            <form >
-                {<div className="row mb-3">
-                    <label htmlFor="inputName" className="col-sm-2 col-form-label">Name</label>
-                    <div className="col-sm-10">
-                        <input type="text" onBlur={handleName} className="form-control" id="inputName" placeholder="Name" />
-                    </div>
-                </div>}
-                <div className="row mb-3">
-                    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
-                    <div className="col-sm-10">
-                        <input onBlur={handleEmail} type="email" className="form-control" id="inputEmail3" placeholder="Email" />
+        <form onSubmit={handleSubmit(onSubmit)} className="row g-3">
+            <div onSubmit={handleRegisterUser}>
+                <div className="col-md-6">
+                    <label for="inputEmail4" className="form-label">Email</label>
+                    <input defaultValue={user.email} {...register("email", { required: true })} type="email" className="form-control" id="inputEmail4" />
+                </div>
+                <div className="col-md-6">
+                    <label for="inputPassword4" className="form-label">Password</label>
+                    <input onBlur={handlePassword} {...register("password", { required: true })} type="password" className="form-control" id="inputPassword4" />
+                </div>
+                <div className="col-12">
+                    <label for="inputAddress" className="form-label">Name</label>
+                    <input onBlur={handleName} {...register("name")} type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
+                </div>
+                <div className="col-12">
+                    <label for="inputAddress2" className="form-label">Address</label>
+                    <input {...register("address")} type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+                </div>
+                <div className="col-md-6">
+                    <label for="inputCity" className="form-label">City</label>
+                    <input {...register("city")} type="text" className="form-control" id="inputCity" />
+                </div>
+                <div className="col-md-4">
+                    <label for="inputState" className="form-label">State</label>
+                    <select id="inputState" className="form-select">
+                        <option selected>Choose...</option>
+                        <option>Dhaka</option>
+                    </select>
+                </div>
+                <div className="col-md-2">
+                    <label for="inputZip" className="form-label">Zip</label>
+                    <input {...register("zip")} type="text" className="form-control" id="inputZip" />
+                </div>
+                <div className="col-12">
+                    <div className="form-check">
+                        <input className="form-check-input" type="checkbox" id="gridCheck" />
+                        <label className="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
                     </div>
                 </div>
-                <div className="row mb-3">
-                    <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
-                    <div className="col-sm-10">
-                        <input type="password" onBlur={handlePassword} className="form-control" id="inputPassword3" placeholder="Password" />
-                    </div>
+                <div className="col-12">
+                    <input type="submit" />
                 </div>
-                <div className="row mb-3 text-danger">{error}</div>
 
-                <button type="submit" className="btn btn-primary" onClick={handleRegisterUser}>
-                    Submit
-                </button>
-            </form>
-
-
+            </div>
             <Link to="/login">Already Registered?</Link>
 
-        </div>
+        </form>
+
+
     );
-};
+}
+
+
+
 
 export default Register;

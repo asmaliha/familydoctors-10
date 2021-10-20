@@ -10,7 +10,6 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
-import Services from './components/Services/Services';
 import AuthProvider from './context/Authprovider';
 
 function App() {

@@ -17,6 +17,7 @@ const Header = () => {
                             width="30"
                             height="30"
                             className="d-inline-block align-top"
+                            alt=""
                         />
                     </Navbar.Brand>
                     <Navbar.Brand href="/home">Family Doctors BD</Navbar.Brand>

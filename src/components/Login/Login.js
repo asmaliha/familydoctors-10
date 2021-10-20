@@ -4,9 +4,9 @@ import useAuth from '../../Hooks/useAuth';
 import './Login.css'
 
 const Login = () => {
-    const { signInUsingGoogle, toggleLogin,
+    const { signInUsingGoogle,
         handleEmail,
-        handlePassword, user,
+        handlePassword,
         handleUserLogin,
         error
 
@@ -14,7 +14,7 @@ const Login = () => {
 
     return (
         <div className="mx-5">
-            <form >
+            <form onSubmit={handleUserLogin}>
                 <h3 className="text-primary">Please Login</h3>
                 <div className="row mb-3">
                     <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
@@ -28,9 +28,9 @@ const Login = () => {
                         <input type="password" onBlur={handlePassword} className="form-control" id="inputPassword3" required />
                     </div>
                 </div>
-                <div className="row mb-3 text-danger">{error}</div>
+                <div className="row mb-3 text-success">{error}</div>
 
-                <button type="submit" className="btn btn-primary" onClick={handleUserLogin}>
+                <button type="submit" className="btn btn-primary" >
                     Submit
                 </button>
                 <br />

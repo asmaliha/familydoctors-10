@@ -29,10 +29,10 @@ const Header = () => {
                             <Nav.Link href="/services">Services</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="/covid">Covid Info</Nav.Link>
-                            <button ><Link to="/login">Login</Link></button>
+                            <Nav.Link href="/covid" className="p-4">Covid Info</Nav.Link>
+                            <button type="button" className="btn btn-secondary border border-dark rounded-pill px-3 my-3"><Link className="text" to="/login">Login</Link></button>
+                            <button type="button" className="btn btn-secondary border border-dark rounded-pill px-3 my-3"><Link className="text" to="/register">Register</Link></button>
 
-                            <button><Link to="/register">Register</Link></button>
                             <span className="text-white">{user.displayName} </span>
 
                             {user?.email && <button onClick={logout}>log out</button>}

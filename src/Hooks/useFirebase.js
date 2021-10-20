@@ -29,9 +29,6 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
     // Eventhandlers for name,email and password
-    const handleName = e => {
-        setName(e.target.value);
-    }
     const handleEmail = e => {
         setEmail(e.target.value);
     }
@@ -97,14 +94,13 @@ const useFirebase = () => {
                 setUser(user);
             }
         })
-    }, [auth]);
+    }, []);
 
     // Returning of values
     return {
         handleUserLogin,
         handleRegisterUser,
         handleEmail,
-        handleName,
         handlePassword,
         user,
         error,

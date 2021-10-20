@@ -16,7 +16,7 @@ const Login = () => {
     return (
         <div className="mx-5">
             <form onSubmit={handleUserLogin}>
-                <h3 className="text-primary">Please Login</h3>
+                <h3 className="text-dark m-3 px-2">Please Login</h3>
                 <div className="row mb-3">
                     <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
                     <div className="col-sm-10">
@@ -31,19 +31,19 @@ const Login = () => {
                 </div>
                 <div className="row mb-3 text-success">{error}</div>
 
-                <button type="submit" className="btn btn-primary" >
+                <button type="submit" className="btn btn-secondary rounded" >
                     Submit
                 </button>
                 <br />
                 <br />
 
-                <Link to="/register">New User?</Link>
+                <Link className="text" to="/register">New User?</Link>
 
             </form>
             <br />
             <div>or</div>
             <br />
-            <button onClick={signInUsingGoogle}>Google Sign In</button>
+            <button className="btn btn-secondary rounded" onClick={signInUsingGoogle}>Google Sign In</button>
             <br />
 
         </div>

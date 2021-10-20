@@ -1,0 +1,18 @@
+.text{
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button:hover {
+    box-shadow: 5px 5px 5px 5px rgb(168, 163, 163);
+    transition: 0.6s;
+    padding:10px;
+}
+.card-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.image { 
+   width: 100%;
+}

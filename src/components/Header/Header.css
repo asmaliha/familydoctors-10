@@ -1,3 +1,9 @@
 .container {
     padding: 30px;
 }
+.text{
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

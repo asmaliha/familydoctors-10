@@ -11,8 +11,8 @@ const Description = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="card-body">
-                            <h5 className="card-title">Lab Tests and Home Sample Collection</h5>
-                            <p className="card-text">
+                            <h2 className="card-title m-3 p-3">Lab Tests and Home Sample Collection</h2>
+                            <p className="card-text m-3 p-3">
 
                                 Lab Tests Online is an award-winning health information web resource designed to help patients and caregivers understand the many lab tests that are a vital part of medical care.
                                 According to authorized prescription we provide sample collection from your doorstep also the reports are provided with maximum accuracy with the shortest possible time</p>
@@ -24,8 +24,8 @@ const Description = () => {
                 <div className="row g-0">
                     <div className="col-md-6">
                         <div className="card-body">
-                            <h5 className="card-title">Consultation with Specialized doctors</h5>
-                            <p className="card-text">"Find most qualified Doctors from Bangladesh to get instant medical advice and second opinion for your health problems. Ask the doctors online and consult them
+                            <h2 className="card-title m-3 p-3">Consultation with Specialized doctors</h2>
+                            <p className="card-text m-3 p-3">"Find most qualified Doctors from Bangladesh to get instant medical advice and second opinion for your health problems. Ask the doctors online and consult them
                                 Book an appointment now and avail the best doctors consultation online.</p>
                         </div>
                     </div>
@@ -42,8 +42,8 @@ const Description = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="card-body">
-                            <h5 className="card-title">Online Pharmacy</h5>
-                            <p className="card-text">Provide us the prescription we'll get you the medicine!
+                            <h2 className="card-title m-3 p-3">Online Pharmacy</h2>
+                            <p className="card-text m-3 p-3">Provide us the prescription we'll get you the medicine!
                                 We offer medicines from trusted pharmaceutical companies and a large range of list there is for you to select. All sort of healthcare products, personal care and medical products ar available to make your life easier.</p>
                         </div>
                     </div>

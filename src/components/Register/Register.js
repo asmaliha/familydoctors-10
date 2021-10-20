@@ -1,5 +1,4 @@
 import React from 'react';
-import { Form, Row, Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
@@ -7,7 +6,7 @@ import './Register.css'
 
 const Register = () => {
     const { user, handlePassword, error, handleRegisterUser, handleName } = useAuth();
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
 
     return (
@@ -52,6 +51,8 @@ const Register = () => {
                         </label>
                     </div>
                 </div>
+                <div className="row mb-3 text-success">{error}</div>
+
                 <div className="col-12">
                     <input type="submit" />
                 </div>

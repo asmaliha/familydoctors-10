@@ -4,7 +4,8 @@ import useAuth from '../../Hooks/useAuth';
 import './Login.css'
 
 const Login = () => {
-    const { signInUsingGoogle,
+    const {
+        signInUsingGoogle,
         handleEmail,
         handlePassword,
         handleUserLogin,
